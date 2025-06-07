@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hipster Steak | ร้านสเต็กแนวคาเฟ่</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Kanit', sans-serif;
+      background-color: #fff8e1;
+      color: #3e2723;
+    }
+    header {
+      background-color: #ffeb3b;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #fff59d;
+      padding: 0.5rem 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #5d4037;
+      font-weight: bold;
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .menu-item {
+      background-color: #fffde7;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 1rem;
+      text-align: center;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .gallery img {
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #fbc02d;
+      color: #3e2723;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #fbc02d;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #5d4037;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hipster Steak</h1>
+    <p>สเต็กแนวคาเฟ่ | คาเฟ่สีเหลือง | บรรยากาศธรรมชาติ</p>
+  </header>
+
+  <nav>
+    <a href="#about">เกี่ยวกับเรา</a>
+    <a href="#menu">เมนูแนะนำ</a>
+    <a href="#gallery">แกลเลอรี่</a>
+    <a href="#contact">ติดต่อ</a>
+  </nav>
+
+  <div class="hero">
+    ยินดีต้อนรับสู่ Hipster Steak
+  </div>
+
+  <section id="about" class="section">
+    <h2>เกี่ยวกับร้าน</h2>
+    <p>Hipster Steak ร้านสเต็กแนวคาเฟ่โทนสีเหลืองอบอุ่น ที่มาพร้อมกับเมนูสเต็กเนื้อระดับพรีเมียม สเต็กหมูรสเข้ม และไก่พริกไทยดำในสวนสวยสุดชิล ใกล้กรมที่ดินบางบัวทอง</p>
+    <a href="https://lin.ee/yourline" class="cta-button">จองโต๊ะผ่าน LINE</a>
+  </section>
+
+  <section id="menu" class="section">
+    <h2>เมนูแนะนำ</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>ทีโบนสเต็ก</h3>
+        <p>นุ่ม ฉ่ำ เต็มคำ</p>
+      </div>
+      <div class="menu-item">
+        <h3>ซี่โครงหมู BBQ</h3>
+        <p>หมักเข้าเนื้อ ย่างหอม</p>
+      </div>
+      <div class="menu-item">
+        <h3>ไก่พริกไทยดำ</h3>
+        <p>เข้มข้นถึงใจ</p>
+      </div>
+    </div>
+    <a href="/menu.pdf" class="cta-button">ดูเมนูฉบับเต็ม (PDF)</a>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>แกลเลอรี่</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/300x200/?steak" alt="steak">
+      <img src="https://source.unsplash.com/300x200/?bbq" alt="bbq">
+      <img src="https://source.unsplash.com/300x200/?grilled-chicken" alt="chicken">
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>ติดต่อเรา</h2>
+    <p>📍 เยื้องกรมที่ดินบางบัวทอง</p>
+    <p>📞 โทร: 094-6789-869</p>
+    <p>📱 Facebook: <a href="https://facebook.com/hipstersteak">@hipstersteak</a></p>
+    <p>📲 LINE: <a href="https://lin.ee/yourline">@hipstersteak</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Hipster Steak. All rights reserved.
+  </footer>
+</body>
+</html>
